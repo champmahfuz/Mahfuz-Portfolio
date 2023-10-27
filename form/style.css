@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #E6E6E6;
+   
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    background-color: #E6E6E6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container{
+    width: 90%;
+    height: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 20px #00000010;
+    box-shadow: 1px 1px 10px 1px #0000007c;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #E6E6E6;
+}
+.form-group{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+    
+    
+}
+.form-group input,textarea{
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 1px #3634347c;
+    outline: none;
+    background-color: #E6E6E6;
+    
+}
+.form-group input,
+.form-group textarea{
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid rgba(128, 128, 128, 0.199);
+    margin-top: 5px;
+}
+textarea{
+    resize: vertical;
+}
+button[type="submit"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    color: rgb(28, 30, 31);
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 1px #3634347c;
+    margin: 10px 6px;
+    transition: .3s ease background-color;
+}
+button[type="submit"]:hover{
+    color: rgb(118, 185, 118);
+}
+#status{
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+#status.success{
+    background-color: rgb(211, 250, 153);
+    animation: status 4s ease  forwards;
+}
+#status.error{
+    background-color: rgb(250, 129, 92);
+    color: white;
+    animation: status 4s ease  forwards;
+}
+
+
+
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
